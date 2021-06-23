@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper #full_header_section {
+  height: 100vh;
+  background: url("../images/luke-peters-B6JINerWMz0-unsplash.jpg"), rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+/*# sourceMappingURL=style.css.map */
