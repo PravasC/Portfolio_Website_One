@@ -1,17 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "element";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 #wrapper{
     width: 100%;
     height: 100%;
 
-    & #full_header_section{
-        height: 100vh;
-        background: url("../images/luke-peters-B6JINerWMz0-unsplash.jpg"),rgba(255, 255, 255,0.7);
-        background-size: cover;
-        background-blend-mode:lighten;
+    & header{
+        width: 100%;
+        height: 100%;
+
+        & .navbar{
+            background-color: $dark-color;
+            padding: 20px;
+            & .navbar-brand{
+                margin-left: 50px;
+                color: $lite-color;
+                font-weight: 700;
+                font-size: 20px;
+                
+                & i{
+                    font-size: 30px;
+                    animation: logoanim 2s linear infinite;
+                }
+            }
+
+            & .navbar-toggler {
+                outline: none;
+                border: none;
+                & i{
+                    color: $lite-color;
+                }   
+            }
+
+            & #navbarNav{
+                & ul{
+                    margin-left: auto;
+                    margin-right: 50px;
+                    & li{
+                        margin-left: 20px;
+                        & a {
+                            color: $lite-color;
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+@keyframes logoanim{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
