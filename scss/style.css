@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+#nav__section {
+  width: 100%;
+  height: 7vh;
+  background-color: #081b29;
+  padding: 0 100px;
+}
+
+#nav__section #nav-menu-btn {
+  display: none;
+  font-size: 2rem;
+}
+
+#nav__section #close-btn {
+  display: none;
+  font-size: 2rem;
+}
+
+#nav__section #NavBar {
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#nav__section #NavBar .display-flex .nav-menu ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+#nav__section #NavBar .display-flex .nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  #nav__section {
+    padding: 0 20px;
+  }
+  #nav__section #NavBar .display-flex .nav-menu ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav__section {
+    width: 100%;
+    height: 70px;
+    background-color: #081b29;
+    padding: 0 0px;
+  }
+  #nav__section #NavBar {
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: inline;
+  }
+  #nav__section #NavBar #nav-menu-btn {
+    display: block;
+  }
+  #nav__section #NavBar .nav-bran-contain {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #nav__section #NavBar .display-flex .nav-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: #081b29;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  #nav__section #NavBar .display-flex .nav-menu ul li {
+    text-align: center;
+    display: inline;
+    margin-left: 0px;
+    padding: 40px;
+    display: block;
+    width: 99vw;
+    background-color: #081b29;
+  }
+  #nav__section #NavBar .display-flex .nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #nav__section #NavBar .display-flex .nav-menu li:first-child {
+    padding-top: 100px;
+  }
+  #nav__section #NavBar .display-flex .showmenu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #nav__section #NavBar .display-flex #close-btn {
+    display: none;
+    font-size: 2rem;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+}
+
+#Hero__section {
+  width: 100%;
+  height: 93vh;
+  background-color: tomato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+#Hero__section .flex_section {
+  background-color: violet;
+}
+
+#Hero__section .flex_section .img__part img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
